@@ -1,10 +1,10 @@
-# 🏪 A-Mart Katapang - Website Mini Market
+# 🏪 A-Mart KolMas - Website Mini Market
 
-![A-Mart Katapang](https://img.shields.io/badge/status-active-brightgreen)
+![A-Mart KolMas](https://img.shields.io/badge/status-active-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0-orange)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-Website resmi **A-Mart Katapang**, mini market terpercaya sejak 2003 di daerah Katapang, Bandung.
+Website resmi **A-Mart KolMas**, mini market terpercaya sejak 2003 di daerah Katapang, Bandung.
 
 ## ✨ Fitur
 
