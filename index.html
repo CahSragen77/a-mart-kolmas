@@ -302,5 +302,44 @@
     
     <!-- JavaScript Eksternal -->
     <script src="js/script.js"></script>
+
+
+<!-- ============ TOMBOL TOGGLE KERANJANG ============ -->
+<button class="btn-toggle-keranjang" id="btnToggleKeranjang" onclick="toggleKeranjang()" title="Keranjang Belanja">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="keranjang-badge" id="keranjangBadge" style="display:none;">0</span>
+</button>
+
+<!-- ============ PANEL KERANJANG ============ -->
+<div class="keranjang-float" id="keranjangFloat">
+    <div class="keranjang-header">
+        <span>🛒 Keranjang Belanja</span>
+        <button class="btn-tutup" onclick="toggleKeranjang()">&times;</button>
+    </div>
+    
+    <div class="keranjang-items" id="keranjangItems">
+        <div class="keranjang-kosong">
+            <i class="fas fa-shopping-basket"></i>
+            <p>Keranjang masih kosong</p>
+            <small>Tambahkan produk pilihanmu!</small>
+        </div>
+    </div>
+    
+    <div class="keranjang-footer">
+        <div class="keranjang-total">
+            <span>Total:</span>
+            <span id="keranjangTotal">Rp 0</span>
+        </div>
+        <button class="btn-checkout" onclick="checkoutWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+        </button>
+    </div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/628281122220723" class="wa-float" target="_blank" title="Chat via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+                
 </body>
 </html>
