@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Mart KolMas - Mini Market Terpercaya</title>
+    
+    <!-- Font dari Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- ============ NAVIGASI ============ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-store"></i>
+                <div class="nav-logo-text">
+                    <h2>A-Mart KolMas</h2>
+                    <span>Mini Market Terpercaya</span>
+                </div>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#promo" class="btn-nav-promo"><i class="fas fa-fire"></i> PROMO</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">🕒 Buka Setiap Hari 06:30 - 21:30</span>
+                <h1>Belanja Hemat di <span class="highlight">A-Mart</span> KolMas</h1>
+                <p>Mini market terpercaya Sejak 2003. Menyediakan kebutuhan pokok, sayur segar, daging, ikan, dan banyak lagi dengan harga bersahabat!</p>
+                <div class="hero-buttons">
+                    <a href="#produk" class="btn-primary"><i class="fas fa-shopping-basket"></i> Lihat Produk</a>
+                    <a href="#promo" class="btn-secondary"><i class="fas fa-tag"></i> Promo Hari Ini</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                🛒
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ INFO BAR ============ -->
+    <div class="info-bar">
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <h4>Jam Operasional</h4>
+                <p>06:30 - 21:30 WIB</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-truck"></i>
+                <h4>Gratis Ongkir</h4>
+                <p>Radius 3 km</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-star"></i>
+                <h4>Sejak 2003</h4>
+                <p>14 Tahun Melayani</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ============ BANNER PROMO ============ -->
+    <section class="section" id="promo">
+        <div class="section-container">
+            <div class="promo-banner">
+                <div class="promo-banner-content">
+                    <h3>🔥 PROMO SPESIAL BULAN INI!</h3>
+                    <div class="promo-diskon">DISKON 20%</div>
+                    <p>Untuk pembelian beras premium, minyak goreng, dan gula pasir!<br>Berlaku hingga 31 Mei 2026</p>
+                    <a href="#produk" class="btn-promo">BELANJA SEKARANG <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ PRODUK PER KATEGORI ============ -->
+    <section class="section" id="produk" style="padding-top: 20px;">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Produk Unggulan Kami</h2>
+                <p>Kualitas terbaik dengan harga bersahabat</p>
+            </div>
+            
+            <!-- Kategori: Sembako -->
+            <div class="kategori-section">
+                <div class="kategori-header">
+                    <i class="fas fa-box"></i>
+                    <h3>Sembako</h3>
+                </div>
+                <div class="produk-grid">
+                    <!-- Beras Premium -->
+                    <div class="produk-card">
+                        <span class="diskon-badge">DISKON 20%</span>
+                        <div class="produk-icon">🍚</div>
+                        <h4>Beras Premium</h4>
+                        <span class="kategori">Sembako</span>
+                        <div class="harga-container">
+                            <span class="harga-coret">Rp 15.000/kg</span>
+                            <span class="harga-diskon">Rp 12.500/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Minyak Goreng -->
+                    <div class="produk-card">
+                        <span class="diskon-badge">DISKON 20%</span>
+                        <div class="produk-icon">🫗</div>
+                        <h4>Minyak Goreng</h4>
+                        <span class="kategori">Sembako</span>
+                        <div class="harga-container">
+                            <span class="harga-coret">Rp 22.000/liter</span>
+                            <span class="harga-diskon">Rp 18.000/liter</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Gula Pasir -->
+                    <div class="produk-card">
+                        <span class="diskon-badge">DISKON 20%</span>
+                        <div class="produk-icon">🍬</div>
+                        <h4>Gula Pasir</h4>
+                        <span class="kategori">Sembako</span>
+                        <div class="harga-container">
+                            <span class="harga-coret">Rp 17.000/kg</span>
+                            <span class="harga-diskon">Rp 14.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Tepung Terigu -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🌾</div>
+                        <h4>Tepung Terigu</h4>
+                        <span class="kategori">Sembako</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 10.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kategori: Protein -->
+            <div class="kategori-section">
+                <div class="kategori-header">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Daging, Ikan & Telur</h3>
+                </div>
+                <div class="produk-grid">
+                    <!-- Daging Ayam -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🍗</div>
+                        <h4>Daging Ayam</h4>
+                        <span class="kategori">Protein</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 45.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Ikan Segar -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🐟</div>
+                        <h4>Ikan Segar</h4>
+                        <span class="kategori">Protein</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 35.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Telur Ayam -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🥚</div>
+                        <h4>Telur Ayam</h4>
+                        <span class="kategori">Protein</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 28.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kategori: Sayur & Buah -->
+            <div class="kategori-section">
+                <div class="kategori-header">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sayur & Buah Segar</h3>
+                </div>
+                <div class="produk-grid">
+                    <!-- Sayur Segar -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🥬</div>
+                        <h4>Sayur Segar</h4>
+                        <span class="kategori">Sayuran</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 8.000/ikat</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                    
+                    <!-- Buah Lokal -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🍎</div>
+                        <h4>Buah Lokal</h4>
+                        <span class="kategori">Buah</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 15.000/kg</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kategori: Minuman -->
+            <div class="kategori-section">
+                <div class="kategori-header">
+                    <i class="fas fa-glass-water"></i>
+                    <h3>Minuman</h3>
+                </div>
+                <div class="produk-grid">
+                    <!-- Susu UHT -->
+                    <div class="produk-card">
+                        <div class="produk-icon">🥛</div>
+                        <h4>Susu UHT</h4>
+                        <span class="kategori">Minuman</span>
+                        <div class="harga-container">
+                            <span class="harga-normal">Rp 12.000/liter</span>
+                        </div>
+                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="kontak">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>🏪 A-Mart KolMas</h3>
+                <p>Mini market terpercaya Sejak 2003. Menyediakan kebutuhan sehari-hari dengan kualitas terbaik dan harga terjangkau.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Jam Operasional</h3>
+                <ul>
+                    <li><i class="fas fa-clock"></i> Senin - Minggu</li>
+                    <li><i class="fas fa-door-open"></i> 06:30 - 21:30 WIB</li>
+                    <li><i class="fas fa-calendar"></i> Termasuk Hari Libur</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> jl. Kolonel Masturi No.212, Cipageran  Kec : Cimahi utara, Kota Cimahi,  Jawa Barat 40551, Indonesia</li>
+                    <li><i class="fas fa-phone"></i> 081122220723</li>
+                    <li><i class="fas fa-envelope"></i> amart.KolMas@email.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footerCopyright">&copy; 2026 A-Mart KolMas. All Rights Reserved. | Mini Market Terpercaya Sejak 2003</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281122220723?text=Assalamu'alaikum...%20Kakak-kakak%20Kol-Mas,%20haku%20minta%20dikasih%20info%20promo%20hari%20ini%20ya%20Kak" class="wa-float" target="_blank" title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- JavaScript Eksternal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
