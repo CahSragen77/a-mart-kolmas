@@ -110,18 +110,22 @@
                     <h3>Sembako</h3>
                 </div>
                 <div class="produk-grid">
+            
                     <!-- Beras Premium -->
-                    <div class="produk-card">
-                        <span class="diskon-badge">DISKON 20%</span>
-                        <div class="produk-icon">🍚</div>
-                        <h4>Beras Premium</h4>
-                        <span class="kategori">Sembako</span>
-                        <div class="harga-container">
-                            <span class="harga-coret">Rp 15.000/kg</span>
-                            <span class="harga-diskon">Rp 12.500/kg</span>
-                        </div>
-                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
-                    </div>
+<div class="produk-card" data-id="1" data-nama="Beras Premium" data-harga="12500" data-satuan="kg">
+    <span class="diskon-badge">DISKON 20%</span>
+    <div class="produk-icon">🍚</div>
+    <h4>Beras Premium</h4>
+    <span class="kategori">Sembako</span>
+    <span class="satuan">per kg</span>
+    <div class="harga-container">
+        <span class="harga-coret">Rp 15.000</span>
+        <span class="harga-diskon">Rp 12.500</span>
+    </div>
+    <button class="btn-keranjang" onclick="tambahKeKeranjang(this)">
+        <i class="fas fa-cart-plus"></i> Tambah
+    </button>
+</div>
                     
                     <!-- Minyak Goreng -->
                     <div class="produk-card">
@@ -192,17 +196,19 @@
                     </div>
                     
                     <!-- Telur Ayam -->
-                    <div class="produk-card">
-                        <div class="produk-icon">🥚</div>
-                        <h4>Telur Ayam</h4>
-                        <span class="kategori">Protein</span>
-                        <div class="harga-container">
-                            <span class="harga-normal">Rp 28.000/kg</span>
-                        </div>
-                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
-                    </div>
-                </div>
-            </div>
+                   <!-- Telur Ayam -->
+<div class="produk-card" data-id="5" data-nama="Telur Ayam" data-harga="28000" data-satuan="kg">
+    <div class="produk-icon">🥚</div>
+    <h4>Telur Ayam</h4>
+    <span class="kategori">Protein</span>
+    <span class="satuan">per kg</span>
+    <div class="harga-container">
+        <span class="harga-normal">Rp 28.000</span>
+    </div>
+    <button class="btn-keranjang" onclick="tambahKeKeranjang(this)">
+        <i class="fas fa-cart-plus"></i> Tambah
+    </button>
+</div>
             
             <!-- Kategori: Sayur & Buah -->
             <div class="kategori-section">
@@ -212,15 +218,18 @@
                 </div>
                 <div class="produk-grid">
                     <!-- Sayur Segar -->
-                    <div class="produk-card">
-                        <div class="produk-icon">🥬</div>
-                        <h4>Sayur Segar</h4>
-                        <span class="kategori">Sayuran</span>
-                        <div class="harga-container">
-                            <span class="harga-normal">Rp 8.000/ikat</span>
-                        </div>
-                        <button class="btn-beli"><i class="fas fa-shopping-cart"></i> Pesan</button>
-                    </div>
+<div class="produk-card" data-id="8" data-nama="Sayur Segar" data-harga="8000" data-satuan="ikat">
+    <div class="produk-icon">🥬</div>
+    <h4>Sayur Segar</h4>
+    <span class="kategori">Sayuran</span>
+    <span class="satuan">per ikat</span>
+    <div class="harga-container">
+        <span class="harga-normal">Rp 8.000</span>
+    </div>
+    <button class="btn-keranjang" onclick="tambahKeKeranjang(this)">
+        <i class="fas fa-cart-plus"></i> Tambah
+    </button>
+</div>
                     
                     <!-- Buah Lokal -->
                     <div class="produk-card">
