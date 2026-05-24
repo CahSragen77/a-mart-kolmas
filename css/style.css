@@ -597,3 +597,236 @@ body {
         display: none;
     }
 }
+
+
+/* ============ TOMBOL KERANJANG ============ */
+.btn-keranjang {
+    background: var(--orange);
+    color: var(--putih);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.btn-keranjang:hover {
+    background: #F57C00;
+    transform: translateY(-2px);
+}
+
+.satuan {
+    display: block;
+    font-size: 11px;
+    color: var(--teks-sedang);
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+/* ============ KERANJANG FLOATING ============ */
+.keranjang-float {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    background: var(--putih);
+    width: 350px;
+    max-height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    z-index: 998;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.keranjang-float.active {
+    display: flex;
+}
+
+.keranjang-header {
+    background: var(--orange);
+    color: var(--putih);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.keranjang-header .btn-tutup {
+    background: none;
+    border: none;
+    color: var(--putih);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.keranjang-items {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.keranjang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.keranjang-item-info h5 {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.keranjang-item-info span {
+    font-size: 11px;
+    color: var(--teks-sedang);
+}
+
+.keranjang-item-harga {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--hijau);
+}
+
+.keranjang-qty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.keranjang-qty button {
+    background: var(--abu-muda);
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.keranjang-qty .qty-angka {
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+.btn-hapus-item {
+    background: none;
+    border: none;
+    color: var(--merah);
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.keranjang-footer {
+    padding: 15px 20px;
+    border-top: 2px solid #eee;
+    background: var(--abu-muda);
+}
+
+.keranjang-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.btn-checkout {
+    background: #25D366;
+    color: var(--putih);
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #1DA851;
+}
+
+.keranjang-kosong {
+    text-align: center;
+    padding: 30px;
+    color: var(--teks-sedang);
+}
+
+.keranjang-kosong i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Tombol Toggle Keranjang */
+.btn-toggle-keranjang {
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    background: var(--orange);
+    color: var(--putih);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: var(--shadow);
+    z-index: 999;
+    transition: transform 0.3s;
+}
+
+.btn-toggle-keranjang:hover {
+    transform: scale(1.1);
+}
+
+.keranjang-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--merah);
+    color: var(--putih);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Keranjang */
+@media (max-width: 768px) {
+    .keranjang-float {
+        width: 90%;
+        right: 5%;
+        bottom: 80px;
+    }
+    
+    .btn-toggle-keranjang {
+        right: 100px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        bottom: 20px;
+    }
+}
