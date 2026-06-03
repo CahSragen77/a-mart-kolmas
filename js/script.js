@@ -1,5 +1,5 @@
 /**
- * A-Mart Katapang - Main JavaScript
+ * A-Mart Kol-mas - Main JavaScript
  * Mini Market Terpercaya Sejak 2010
  */
 
@@ -53,7 +53,7 @@ function updateCopyrightYear() {
     const footerCopyright = document.getElementById('footerCopyright');
     if (footerCopyright) {
         const currentYear = new Date().getFullYear();
-        footerCopyright.innerHTML = `&copy; ${currentYear} A-Mart Katapang. All Rights Reserved. | Mini Market Terpercaya Sejak 2010`;
+        footerCopyright.innerHTML = `&copy; ${currentYear} A-Mart Kol-mas. All Rights Reserved. | Mini Market Terpercaya Sejak 2010`;
     }
 }
 
@@ -120,7 +120,7 @@ function initSmoothScroll() {
 function initScrollAnimation() {
     // Bisa ditambahkan nanti untuk animasi fade-in saat scroll
     // Ini placeholder untuk pengembangan selanjutnya
-    console.log('A-Mart Katapang - Website siap! 🛒');
+    console.log('A-Mart Kol-mas - Website siap! 🛒');
 }
 
 // ============ INISIALISASI SEMUA FUNGSI ============
