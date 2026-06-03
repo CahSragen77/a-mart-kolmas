@@ -1,6 +1,6 @@
 /**
  * A-Mart Kol-mas - Main JavaScript
- * Mini Market Terpercaya Sejak 2010
+ * Mini Market Terpercaya Sejak 2023
  */
 
 // ============ MOBILE MENU TOGGLE ============
@@ -53,7 +53,7 @@ function updateCopyrightYear() {
     const footerCopyright = document.getElementById('footerCopyright');
     if (footerCopyright) {
         const currentYear = new Date().getFullYear();
-        footerCopyright.innerHTML = `&copy; ${currentYear} A-Mart Kol-mas. All Rights Reserved. | Mini Market Terpercaya Sejak 2010`;
+        footerCopyright.innerHTML = `&copy; ${currentYear} A-Mart Kol-mas. All Rights Reserved. | Mini Market Terpercaya Sejak 2023`;
     }
 }
 
