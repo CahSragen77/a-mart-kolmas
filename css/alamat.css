@@ -1,0 +1,248 @@
+/* ============================================
+   A-Mart Kolmas Cimahi - Halaman Alamat
+   ============================================ */
+
+/* Container Utama */
+.alamat-container {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+}
+
+/* Header Halaman */
+.alamat-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.alamat-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--teks-gelap);
+    margin-bottom: 10px;
+}
+
+.alamat-header h1 i {
+    color: var(--merah);
+}
+
+.alamat-header p {
+    font-size: 16px;
+    color: var(--teks-sedang);
+}
+
+/* Grid Layout: Peta + Info */
+.alamat-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Peta Container */
+.peta-wrapper {
+    background: var(--putih);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.peta-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+
+/* Info Card */
+.alamat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: var(--putih);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--teks-gelap);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card h3 i {
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: var(--teks-sedang);
+    line-height: 1.8;
+}
+
+.info-card .highlight-text {
+    font-weight: 600;
+    color: var(--teks-gelap);
+}
+
+/* Tombol Navigasi */
+.navigasi-section {
+    margin-top: 30px;
+}
+
+.navigasi-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.navigasi-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.btn-navigasi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: var(--putih);
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-navigasi:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-google {
+    background: #4285F4;
+}
+
+.btn-google:hover {
+    background: #3367D6;
+}
+
+.btn-apple {
+    background: #000000;
+}
+
+.btn-apple:hover {
+    background: #333333;
+}
+
+.btn-waze {
+    background: #33CCFF;
+    color: #000;
+}
+
+.btn-waze:hover {
+    background: #29B8E8;
+}
+
+.btn-navigasi i {
+    font-size: 20px;
+}
+
+/* Jam Operasional */
+.jam-operasional {
+    background: linear-gradient(135deg, var(--orange), #F57C00);
+    color: var(--putih);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.jam-operasional h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.jam-operasional .jam-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.jam-item {
+    text-align: center;
+}
+
+.jam-item .hari {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.jam-item .waktu {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--teks-sedang);
+}
+
+.breadcrumb a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: var(--teks-sedang);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .alamat-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .peta-wrapper iframe {
+        height: 300px;
+    }
+    
+    .navigasi-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .alamat-header h1 {
+        font-size: 28px;
+    }
+    
+    .jam-operasional .jam-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
